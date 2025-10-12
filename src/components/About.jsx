@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import tablet from '../assets/tableticon.png';
+import tablet from '../assets/Tableticon.png';
 
 const containerVariants = {
   hidden: { opacity: 0, x: -200 },
