@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Navbar'
 import tablet from '../assets/tablet.png'
-import home from '../assets/home.jpg'
+import home from '../assets/Home.jpg'
 const Header = () => {
   return (
     <div className='min-h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden bg-[#f2f3fd]' id='Header'>
