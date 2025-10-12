@@ -42,14 +42,14 @@ const FeatureCard = ({ icon, title, children }) => (
 export default function WhyChooseUs() {
   return (
     <motion.section
-      className="py-12 md:py-24 px-4 bg-gray-50 font-sans"
+      className="py-12 md:py-24 px-4 bg-[#fbfafa] font-sans"
       id="why-choose-us"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
       variants={containerVariants}
     >
-      <div className="container mx-auto">
+      <div className="bg-[#fbfafa] container mx-auto" id='Info'>
         <div className="text-center mb-12 md:mb-20">
           <motion.h2
             className="text-4xl lg:text-5xl font-bold text-gray-800"
