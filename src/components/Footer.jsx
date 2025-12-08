@@ -7,7 +7,8 @@ const Footer = () => {
       <div className='container mx-auto flex flex-col md:flex-row justify-between items-start'>
         <div className='w-full md:w-1/3 mb-8 md:mb-0'>
           {/* <img src={assets.logo} alt="" /> */}
-          <h2 className='text-2xl text-white'>EakPustak</h2>
+          {/* <h2 className='text-2xl text-white'>EakPustak</h2> */}
+          <img src={assets.light_logo} alt="" className='w-1/2'/>
           <p className='text-gray-400 mt-4'>The student e-tablet designed for focused learning. An initiative by the students of IIT Dhanbad to make education more accessible and effective.</p>
         </div>
         <div className='w-full md:w-1/5 mb-8 md:mb-0'>
@@ -20,8 +21,8 @@ const Footer = () => {
           </ul>
         </div>
         <div className='w-full md:w-1/3'>
-        <h3 className='text-white text-lg font-bold mb-4'>Subscribe to our newsletter</h3>
-        <p className='text-gray-400 mb-4 max-w-80'>The latest news, articles, and resources, sent to your inbox weekly.</p>
+        <h3 className='text-white text-lg font-bold mb-4'>Subscribe to get our updates</h3>
+        <p className='text-gray-400 mb-4 max-w-80'>The latest updates, innovations, and resources, sent to your inbox.</p>
         <div className='flex gap-2'>
           <input type="email" placeholder='Enter your email' className='p-2 rounded bg-gray-800 text-gray-400 border border-gray-700 focus:outline-none w-full md:w-auto'/>
           <button className='py-2 px-4 rounded bg-blue-500 text-white'>Subscribe</button>
