@@ -21,8 +21,8 @@ const Navbar = () => {
         <ul className=' hidden md:flex gap-7 text-black font-semibold'>
           <a href="#Home" className='cursor-pointer hover:text-indigo-700'>Home</a>
           <a href="#About" className='cursor-pointer hover:text-indigo-700'>About</a>
-          <a href="#Info" className='cursor-pointer hover:text-indigo-700'>Info</a>
-          <a href="#Testimonials" className='cursor-pointer hover:text-indigo-700'>Testimonials</a>
+          <a href="#Product" className='cursor-pointer hover:text-indigo-700'>Product</a>
+          <a href="#Contact" className='cursor-pointer hover:text-indigo-700'>Contact</a>
         </ul>
         <a
   href="tel:8118009161"

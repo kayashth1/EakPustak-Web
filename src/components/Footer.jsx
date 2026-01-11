@@ -16,8 +16,8 @@ const Footer = () => {
           <ul className='flex flex-col gap-2 text-gray-400'>
             <a href="#Home" className='hover:text-white'>Home</a>
             <a href="#About" className='hover:text-white'>About</a>
-            <a href="#Info" className='hover:text-white'>Info</a>
-            <a href="#Contact" className='hover:text-white'>Contact Us</a>
+            <a href="#Product" className='hover:text-white'>Product</a>
+            <a href="#Contact" className='hover:text-white'>Contact</a>
           </ul>
         </div>
         <div className='w-full md:w-1/3'>

@@ -9,3 +9,38 @@
 *{
   font-family: Outfit;
 }
+
+@keyframes orbit-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-orbit {
+  animation: orbit-slow 30s linear infinite;
+}
+
+@keyframes float-soft {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.float-slow {
+  animation: float-soft 4s ease-in-out infinite;
+}
+
+.float-medium {
+  animation: float-soft 5s ease-in-out infinite;
+}
+
+.float-fast {
+  animation: float-soft 6s ease-in-out infinite;
+}
