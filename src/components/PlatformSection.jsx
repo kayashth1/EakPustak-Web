@@ -140,7 +140,7 @@ const PlatformSection = () => {
             </div>
 
             {/* <TeacherPanel /> */}
-            <div>
+            <div className="flex justify-center items-center">
               <img className="w-[85%]" src="./teacher.png" alt="" />
             </div>
           </div>

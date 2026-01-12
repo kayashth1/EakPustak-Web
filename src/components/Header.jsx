@@ -4,8 +4,8 @@ import {
   FaSchool,
   FaUsers
 } from "react-icons/fa";
-import { HiOutlineDeviceTablet } from "react-icons/hi";
 import EakEcosystem from "./EakEcosystem";
+
 
 const Header = () => {
   return (
@@ -55,7 +55,7 @@ const Header = () => {
         </div>
 
         {/* RIGHT VISUAL */}
-        <div className="ml-20">
+        <div className="flex justify-center md:w-1/2">
           <EakEcosystem />
         </div>
       </div>

@@ -43,55 +43,70 @@ const Navbar = () => {
         <img
           onClick={() => setshowMobileMenu(true)}
           src={assets.menuicon}
-          className="md:hidden w-7 cursor-pointer text-black"
+          className="md:hidden w-7 cursor-pointer invert"
           alt=""
         />
       </div>
       {/* --------- mobile-menu ---------- */}
-      <div
-        className={`md:hidden ${
-          showMobileMenu ? "fixed w-full" : "h-0 w-0"
-        }  right-0 top-0 bottom-0 overflow-hidden bg-white transition-all`}
+
+<div
+  className={`md:hidden ${
+    showMobileMenu ? "fixed w-full h-full" : "h-0 w-0"
+  } right-0 top-0 bottom-0 overflow-hidden 
+  bg-[linear-gradient(135deg,_#1e1b4b_0%,_#312e81_50%,_#1e1b4b_100%)]
+  transition-all duration-300 z-50`}
+>
+  {/* Top bar: Logo + Close */}
+  <div className="flex items-center justify-between px-6 py-5">
+    <img
+      src={assets.light_logo}
+      alt="Logo"
+      className="w-[140px]"
+    />
+    <img
+      onClick={() => setshowMobileMenu(false)}
+      src={assets.cross_icon}
+      className="w-6 invert cursor-pointer"
+      alt="Close"
+    />
+  </div>
+
+  {/* Navigation links */}
+  <ul className="flex flex-col items-center gap-4 mt-10 px-5 text-lg font-semibold text-white">
+    {[
+      { name: "Home", link: "#Home" },
+      { name: "About", link: "#About" },
+      { name: "Product", link: "#Product" },
+      { name: "Contact", link: "#Contact" },
+    ].map((item) => (
+      <a
+        key={item.name}
+        href={item.link}
+        onClick={() => setshowMobileMenu(false)}
+        className="px-6 py-3 rounded-full w-48 text-center
+        bg-[linear-gradient(135deg,_#312e81_0%,_#4338ca_50%,_#312e81_100%)]
+        hover:bg-[linear-gradient(135deg,_#4338ca_0%,_#6366f1_50%,_#4338ca_100%)]
+        transition"
       >
-        <div className="flex justify-end p-6 cursor-pointer">
-          <img
-            onClick={() => setshowMobileMenu(false)}
-            src={assets.cross_icon}
-            className="w-6 text-black"
-            alt=""
-          />
-        </div>
-        <ul className="flex flex-col items-center gap-2 mt-5 px-5 text-lg font-medium">
-          <a
-            onClick={() => setshowMobileMenu(false)}
-            href="#Home"
-            className="px-4 py-2 rounded-full inline-block"
-          >
-            Home
-          </a>
-          <a
-            onClick={() => setshowMobileMenu(false)}
-            href="#About"
-            className="px-4 py-2 rounded-full inline-block"
-          >
-            About
-          </a>
-          <a
-            onClick={() => setshowMobileMenu(false)}
-            href="#Info"
-            className="px-4 py-2 rounded-full inline-block"
-          >
-            Info
-          </a>
-          <a
-            onClick={() => setshowMobileMenu(false)}
-            href="#Testimonials"
-            className="px-4 py-2 rounded-full inline-block"
-          >
-            Testimonials
-          </a>
-        </ul>
-      </div>
+        {item.name}
+      </a>
+    ))}
+  </ul>
+
+  {/* Call Now button */}
+  <div className="flex justify-center mt-10">
+    <a
+      href="tel:8118009161"
+      className="px-10 py-3 rounded-full font-semibold text-white
+      bg-[linear-gradient(135deg,_#312e81_0%,_#4338ca_50%,_#312e81_100%)]
+      hover:bg-[linear-gradient(135deg,_#4338ca_0%,_#6366f1_50%,_#4338ca_100%)]
+      transition"
+    >
+      Call Now
+    </a>
+  </div>
+</div>
+
     </div>
   );
 };
