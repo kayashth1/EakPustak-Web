@@ -13,7 +13,7 @@ const WhySchoolsStruggle = () => {
         
         {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-slate-900">
+          <h2 className="text-3xl font-bold md:text-4xl text-slate-900">
             Why Schools Struggle Today
           </h2>
           <p className="text-slate-500 mt-2">
@@ -32,6 +32,13 @@ const WhySchoolsStruggle = () => {
             iconColor="text-red-600"
           />
 
+<Card
+  icon={<FaEyeSlash />}
+  title="Poor Data Visibility"
+  description="Principals and parents don't know a student is struggling until it's too late."
+  bg="bg-purple-100"
+  iconColor="text-purple-600"
+/>
           <Card
             icon={<FaFileInvoice />}
             title="Paper Overload"
@@ -48,13 +55,6 @@ const WhySchoolsStruggle = () => {
             iconColor="text-blue-600"
           />
 
-          <Card
-            icon={<FaEyeSlash />}
-            title="Poor Data Visibility"
-            description="Principals and parents don't know a student is struggling until it's too late."
-            bg="bg-purple-100"
-            iconColor="text-purple-600"
-          />
         </div>
       </div>
     </section>

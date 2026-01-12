@@ -28,12 +28,12 @@ export default function DemoRequestForm() {
   };
 
   return (
-    <section id="Contact" className="py-24 bg-gradient-to-br from-indigo-700 to-blue-700 text-white">
+    <section id="Contact" className="py-24 bg-gradient-to-br bg-blue-100 text-white">
       <div className="max-w-5xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <h2 className="text-3xl text-indigo-900 md:text-4xl font-bold mb-4">
           Transform Your School’s Digital Experience
         </h2>
-        <p className="text-indigo-200 mb-12">
+        <p className="text-slate-600 mb-12">
           Join forward-thinking institutions replacing heavy bags with the EAK
           Pustak System.
         </p>
@@ -66,7 +66,10 @@ export default function DemoRequestForm() {
           <button
             type="submit"
             disabled={status === "sending"}
-            className="w-full mt-8 bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 rounded-xl transition disabled:opacity-60"
+            style={{
+              background: "linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e1b4b 100%)"
+            }}
+            className="w-full mt-8  hover:bg-black-600 text-white font-bold py-4 rounded-xl transition disabled:opacity-60"
           >
             {status === "sending" ? "Sending..." : "Request Live Demo"}
           </button>

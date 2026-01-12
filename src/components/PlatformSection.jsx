@@ -32,11 +32,11 @@ const PlatformSection = () => {
 
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-slate-900">
+          <h2 className="text-3xl font-bold md:text-4xl text-slate-900">
             Tailored Interfaces for Every Role
           </h2>
           <p className="text-slate-500 mt-2">
-            One database. Three distinct experiences.
+            Three Pillers of the Eak Pustak Ecosystem
           </p>
         </div>
 
@@ -114,7 +114,7 @@ const PlatformSection = () => {
               </h3>
 
               <p className="text-slate-600 mb-6">
-                Push homework to 50 tablets with one click.
+                Push homework to multiple students with one click.
               </p>
 
               <ul className="space-y-4">
@@ -127,7 +127,7 @@ const PlatformSection = () => {
                 <Feature
                   icon={<FaBroadcastTower />}
                   title="Doubt Solving Control"
-                  text="Help when students can ask doubts."
+                  text="Help whenever students ask doubts."
                   color="pink"
                 />
                 <Feature
@@ -159,7 +159,7 @@ const PlatformSection = () => {
               </h3>
 
               <p className="text-slate-600 mb-6">
-                A locked-down App that replaces standard tablet interfaces on student.
+                A locked-down App that replaces conventional way of studying.
               </p>
 
               <ul className="space-y-4">

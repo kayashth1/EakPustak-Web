@@ -1,10 +1,11 @@
 import React from "react";
 
-
-const Feature = ({ text, color }) => (
-  <li className="flex items-start gap-2 text-l text-white-600">
-    <span className={`${color} mt-1`}>✓</span>
-    <span>{text}</span>
+const Feature = ({ text, color = "text-white" }) => (
+  <li className="flex items-start gap-2 text-l transition-all duration-300 hover:translate-x-1">
+    <span className={`${color} mt-1 transition-transform duration-300 group-hover:scale-110`}>
+      ✓
+    </span>
+    <span className="opacity-90">{text}</span>
   </li>
 );
 
@@ -15,14 +16,17 @@ export default function ProductComparison() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
 
           {/* STANDARD VERSION */}
-          <div className="bg-blue-100 rounded-3xl p-6 shadow-sm border border-slate-200">
+          <div className="group bg-blue-100 rounded-3xl p-6 shadow-sm border border-slate-200 transition-all duration-500 hover:-translate-y-2 hover:shadow-xl">
             <h3 className="text-xl font-bold text-slate-900 mb-6">
               Standard Version
             </h3>
 
-            {/* Image Placeholder */}
-            <div className="flex items-center justify-center mb-8">
-              <img className="w-[60%]" src="./standard_tab.png" alt="" />
+            <div className="flex items-center justify-center mb-8 overflow-hidden">
+              <img
+                className="w-[60%] transition-transform duration-500 group-hover:scale-105"
+                src="./standard_tab.png"
+                alt=""
+              />
             </div>
 
             <ul className="space-y-3 mb-6">
@@ -36,23 +40,32 @@ export default function ProductComparison() {
           </div>
 
           {/* PREMIUM VERSION */}
-          <div className="relative bg-gradient-to-br from-indigo-700 to-blue-700 rounded-3xl p-6 text-white shadow-lg">
-            
-            {/* Badge */}
-            <span className="absolute top-6 right-6 bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-full">
+          <div
+            className="group relative rounded-3xl p-6 text-white shadow-lg transition-all duration-500 hover:-translate-y-3 hover:shadow-2xl"
+            style={{
+              background: "linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #1e1b4b 100%)"
+            }}
+          >
+            {/* Glow on hover */}
+            <div className="absolute inset-0 rounded-3xl bg-white/5 opacity-0 group-hover:opacity-100 transition duration-500 pointer-events-none" />
+
+            <span className="absolute top-6 right-6 bg-blue-500 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
               Most Popular
             </span>
 
-            <h3 className="text-xl font-bold mb-6">
+            <h3 className="text-xl font-bold mb-6 relative z-10">
               Premium Version
             </h3>
 
-            {/* Image Placeholder */}
-            <div className="flex items-center justify-center mb-8">
-              <img className="w-[50%]" src="./premium_tab.png" alt="" />
+            <div className="flex items-center justify-center mb-8 overflow-hidden relative z-10">
+              <img
+                className="w-[50%] transition-transform duration-500 group-hover:scale-110"
+                src="./premium_tab.png"
+                alt=""
+              />
             </div>
 
-            <ul className="space-y-3 mb-10 text-white">
+            <ul className="space-y-3 mb-10 relative z-10">
               <Feature text="Advanced tablet with palm-rejection for seamless writing" />
               <Feature text="Academic content from two leading publishers" />
               <Feature text="1½ academic year subscription to USMS Pro" />
@@ -60,7 +73,6 @@ export default function ProductComparison() {
               <Feature text="Includes Active Stylus and Premium Protective Cover" />
               <Feature text="Priority updates with early access to beta features" />
             </ul>
-
           </div>
 
         </div>

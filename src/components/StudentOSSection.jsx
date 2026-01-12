@@ -25,11 +25,11 @@ const StudentOSSection = () => {
           </div>
 
           <h2 className="text-4xl font-bold mb-6">
-            A Distraction-Free OS Layer
+            A Distraction-Free Software Layer
           </h2>
 
           <p className="text-indigo-200 text-lg mb-10 max-w-xl">
-            Standard Android tablets are gateways to distraction. EAK Pustak runs
+            Standard Android tablets are gateways to distraction. Eak Pustak runs
             a custom launcher that restricts access to learning tools only.
           </p>
 
@@ -38,7 +38,7 @@ const StudentOSSection = () => {
             <div className="grid grid-cols-3 px-6 py-4 text-sm font-semibold bg-white/10">
               <div>Feature</div>
               <div className="text-red-300 text-center">Normal Tablet</div>
-              <div className="text-green-400 text-center">EAK Tablet</div>
+              <div className="text-green-400 text-center">Eak Pustak   Tablet</div>
             </div>
 
             <Row

@@ -5,11 +5,12 @@ import {
   FaUsers
 } from "react-icons/fa";
 import { HiOutlineDeviceTablet } from "react-icons/hi";
+import EakEcosystem from "./EakEcosystem";
 
 const Header = () => {
   return (
-    <section id="Home" className="pt-10 pb-20 hero-gradient relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
+    <section id="Home" className="pt-10 pb-20 hero-gradient relative overflow-hidden bg-[#fbfafa]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center ">
 
         {/* LEFT CONTENT — unchanged */}
         <div className="md:w-1/2 text-center md:text-left mb-12 md:mb-0">
@@ -17,9 +18,11 @@ const Header = () => {
             Compliant with NEP 2020
           </div>
 
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-slate-900 leading-tight mb-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight mb-6">
             The Complete{" "}
-            <span className="text-blue-600">Digital School System</span>
+<span className="bg-gradient-to-br from-[#1e1b4b] via-[#312e81] to-[#1e1b4b] bg-clip-text text-transparent">
+  Digital School System
+</span>
           </h1>
 
           <p className="text-lg text-gray-600 mb-8 leading-relaxed max-w-lg mx-auto md:mx-0">
@@ -31,7 +34,12 @@ const Header = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
 <a
   href="#contact"
-  className="bg-blue-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition shadow-lg inline-block text-center"
+  className="
+    bg-[linear-gradient(135deg,_#1e1b4b_0%,_#312e81_50%,_#1e1b4b_100%)]
+    hover:bg-[linear-gradient(135deg,_#312e81_0%,_#4338ca_50%,_#312e81_100%)]
+    text-white px-8 py-4 rounded-lg font-bold text-lg
+    transition shadow-lg inline-block text-center
+  "
 >
   Get Started
 </a>
@@ -47,67 +55,8 @@ const Header = () => {
         </div>
 
         {/* RIGHT VISUAL */}
-        <div className="md:w-1/2 flex justify-center mt-16 md:mt-0">
-          <div className="relative w-[280px] sm:w-[320px] md:w-[360px] lg:w-[400px] aspect-square">
-
-            {/* Outer circle */}
-            <div className="absolute inset-0 rounded-full bg-white shadow-2xl" />
-
-            {/* Dashed orbit (static) */}
-            <svg className="absolute inset-0 w-full h-full">
-              <circle
-                cx="50%"
-                cy="50%"
-                r="42%"
-                fill="none"
-                stroke="#cbd5e1"
-                strokeWidth="2"
-                strokeDasharray="6 6"
-              />
-            </svg>
-
-            {/* Center */}
-            <div className="absolute inset-0 flex items-center justify-center z-10">
-              <div className="text-center">
-                <HiOutlineDeviceTablet className="text-5xl text-blue-600 mb-2" />
-                <p className="font-bold text-slate-800">EAK Pustak OS</p>
-              </div>
-            </div>
-
-            {/* Icons with subtle float */}
-            <OrbitItem angle={300}>
-              <RoleCard
-                icon={<FaChalkboardTeacher />}
-                label="Teacher"
-                bg="bg-green-100"
-                text="text-green-800"
-                iconColor="text-green-600"
-                floatClass="float-slow"
-              />
-            </OrbitItem>
-
-            <OrbitItem angle={210}>
-              <RoleCard
-                icon={<FaSchool />}
-                label="School Admin"
-                bg="bg-orange-100"
-                text="text-orange-800"
-                iconColor="text-orange-600"
-                floatClass="float-medium"
-              />
-            </OrbitItem>
-
-            <OrbitItem angle={30}>
-              <RoleCard
-                icon={<FaUsers />}
-                label="Parents"
-                bg="bg-purple-100"
-                text="text-purple-800"
-                iconColor="text-purple-600"
-                floatClass="float-fast"
-              />
-            </OrbitItem>
-          </div>
+        <div className="ml-20">
+          <EakEcosystem />
         </div>
       </div>
     </section>

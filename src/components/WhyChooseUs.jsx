@@ -16,13 +16,13 @@ export default function WhyChooseUs() {
   return (
     <section
       id="why-choose-us"
-      className="py-20 px-4 bg-[#f4f0ff] font-sans"
+      className="py-20 px-4 bg-blue-100 font-sans"
     >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-indigo-900">
-            What Schools Truly Need to Thrive
+            What Makes Eak Pustak Worth it ?
           </h2>
           <p className="text-slate-600 mt-4 max-w-3xl mx-auto">
             To foster an effective learning environment, schools need tools that
@@ -33,11 +33,11 @@ export default function WhyChooseUs() {
 
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          <FeatureCard
-            icon={<IconPen />}
-            title="Lightweight & Portable"
-            description="A device designed for daily student use—easy to carry, reducing physical burden while promoting mobility in learning."
-          />
+        <FeatureCard
+          icon={<IconRoles />}
+          title="Built for Every Role in School"
+          description="A purpose-driven ecosystem with distinct experiences for Admins, Teachers, and Students—each role gets exactly what they need, nothing more, nothing less."
+        />
 
           <FeatureCard
             icon={<IconEcosystem />}
@@ -46,29 +46,28 @@ export default function WhyChooseUs() {
           />
 
           <FeatureCard
+            icon={<IconData />}
+            title="Data-Driven Resource Allocation"
+            description="Live insights help schools optimize staffing, budgeting, and infrastructure decisions with confidence."
+          />
+          <FeatureCard
             icon={<IconWorkload />}
             title="Reduced Non-Teaching Workload"
             description="Automation replaces registers and paperwork, allowing teachers to focus on what matters most: teaching."
           />
 
-          <FeatureCard
-            icon={<IconData />}
-            title="Data-Driven Resource Allocation"
-            description="Live insights help schools optimize staffing, budgeting, and infrastructure decisions with confidence."
-          />
 
           <FeatureCard
             icon={<IconFocus />}
             title="Distraction-Free Focus"
             description="A controlled learning environment free from games, social media, and unnecessary digital noise."
           />
-
-          {/* 🔁 REPLACED CARD */}
           <FeatureCard
-            icon={<IconRoles />}
-            title="Built for Every Role in School"
-            description="A purpose-driven ecosystem with distinct experiences for Admins, Teachers, and Students—each role gets exactly what they need, nothing more, nothing less."
+            icon={<IconPen />}
+            title="Lightweight & Portable"
+            description="A device designed for daily student use—easy to carry, reducing physical burden while promoting mobility in learning."
           />
+
         </div>
       </div>
     </section>
