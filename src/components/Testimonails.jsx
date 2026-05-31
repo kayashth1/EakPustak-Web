@@ -1,34 +1,59 @@
-import React from 'react'
-import { assets, testimonialsData } from '../assets/assets'
-import {motion} from 'framer-motion'
+import React from "react";
+import { motion } from "framer-motion";
+import { assets, testimonialsData } from "../assets/assets";
+
 const Testimonails = () => {
   return (
-    <motion.div
-    initial={{opacity:0,x:100}}
-      transition={{duration:1}}
-      whileInView={{opacity:1,x:0}}
-      viewport={{once:true}}
-    className='container mx-auto py-10 lg:px-32 w-full overflow-hidden' id='Testimonials'>
-      <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>Customber <span className='underline underline-offset-4 decortion-1 font-light'>Testimonials</span></h1>
-      <p className='text-center text-gray-500 mb-12 mx-w-80 mx-auto'>Real Stories from Those-who Found Home with Us</p>
+    <section className="py-20 bg-slate-50" id="Testimonials">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
-      <div className='flex flex-wrap justify-center gap-8'>
-        {testimonialsData.map((testimonial,index)=>(
-          <div key={index} className='max-w-[340px] border shadow-lg rounded px-8 py-12 text-center'>
-            <img className='w-20 h-20 rounded-full mx-auto mb-4' src={testimonial.image} alt={testimonial.alt} />
-            <h2 className='text-xl text-gray-700 font-medium'>{testimonial.name}</h2>
-            <p className='text-gray-500 mb-4 text-sm'>{testimonial.title}</p>
-            <div className='flex justify-center gap-1 text-red-500 mb-4'>
-              {Array.from({length:testimonial.rating},(item,index)=>(
-                <img key={index} src={assets.star_icon} alt="" />
-              ))}
-            </div>
-            <p className='text-gray-600'>{testimonial.text}</p>
-          </div>
-        ))}
+        <div className="text-center mb-14">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">
+            What Educators Say
+          </h2>
+          <p className="text-slate-500 mt-3">
+            Feedback from teachers, professors and advisors who've seen it firsthand.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {testimonialsData.map((t, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.15 }}
+              viewport={{ once: true }}
+              className="bg-white rounded-2xl p-7 border border-slate-100 shadow-sm hover:shadow-md transition flex flex-col"
+            >
+              {/* Stars */}
+              <div className="flex gap-1 mb-5">
+                {Array.from({ length: t.rating }).map((_, i) => (
+                  <img key={i} src={assets.star_icon} alt="star" className="w-4 h-4" />
+                ))}
+              </div>
+
+              <p className="text-slate-600 text-sm leading-relaxed flex-1">
+                "{t.text}"
+              </p>
+
+              <div className="flex items-center gap-3 mt-6 pt-5 border-t border-slate-100">
+                <img
+                  src={t.image}
+                  alt={t.name}
+                  className="w-11 h-11 rounded-full object-cover"
+                />
+                <div>
+                  <div className="font-bold text-slate-900 text-sm">{t.name}</div>
+                  <div className="text-slate-500 text-xs">{t.title}</div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
-    </motion.div>
-  )
-}
+    </section>
+  );
+};
 
-export default Testimonails
+export default Testimonails;
