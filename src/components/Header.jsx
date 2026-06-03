@@ -33,7 +33,7 @@ const Header = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
 <a
-  href="#contact"
+  href="#Contact"
   className="
     bg-[linear-gradient(135deg,_#1e1b4b_0%,_#312e81_50%,_#1e1b4b_100%)]
     hover:bg-[linear-gradient(135deg,_#312e81_0%,_#4338ca_50%,_#312e81_100%)]

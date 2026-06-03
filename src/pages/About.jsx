@@ -1,21 +1,9 @@
 import React from "react";
-import { assets } from "../assets/assets";
 import { FaEnvelope, FaPhone, FaGlobe } from "react-icons/fa";
 
 const About = () => {
   return (
     <div className="min-h-screen bg-white">
-
-      {/* Hero band */}
-      <div
-        className="py-20 flex flex-col items-center justify-center text-white text-center px-4"
-        style={{ background: "linear-gradient(135deg, #1e1b4b 0%, #312e81 55%, #1e1b4b 100%)" }}
-      >
-        <img src={assets.light_logo} alt="EAK Pustak" className="w-44 mb-6" />
-        <p className="text-indigo-300 text-sm font-semibold tracking-widest uppercase">
-          Read Anywhere, Anytime
-        </p>
-      </div>
 
       {/* Content */}
       <div className="max-w-2xl mx-auto px-6 py-16 space-y-12">
