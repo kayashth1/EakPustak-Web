@@ -39,7 +39,14 @@ function PageTitle() {
   const { pathname } = useLocation()
 
   useEffect(() => {
-    document.title = pageTitles[pathname] ?? 'EAK Pustak'
+    const title = pageTitles[pathname] ?? 'EAK Pustak'
+    document.title = title
+    if (window.gtag) {
+      window.gtag('event', 'page_view', {
+        page_path: pathname,
+        page_title: title,
+      })
+    }
   }, [pathname])
 
   return null
