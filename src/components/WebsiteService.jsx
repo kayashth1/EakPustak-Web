@@ -116,12 +116,12 @@ export default function WebsiteService() {
                   ))}
                 </ul>
                 <a
-                  href="tel:+917978290345"
+                  href="tel:+917815040068"
                   className={`mt-4 block w-full text-center text-sm transition ${
                     plan.dark ? "text-indigo-300 hover:text-white" : "text-slate-500 hover:text-indigo-700"
                   }`}
                 >
-                  📞 +91 79782 90345
+                  📞 +91 78150 40068
                 </a>
               </div>
             ))}

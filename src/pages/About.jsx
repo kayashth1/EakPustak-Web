@@ -55,7 +55,7 @@ const About = () => {
             </li>
             <li className="flex items-center gap-3">
               <FaPhone className="text-indigo-500 shrink-0" />
-              <a href="tel:+917978290345" className="hover:text-indigo-700 transition">+91 79782 90345</a>
+              <a href="tel:+917815040068" className="hover:text-indigo-700 transition">+91 78150 40068</a>
             </li>
             <li className="flex items-center gap-3">
               <FaEnvelope className="text-indigo-500 shrink-0" />

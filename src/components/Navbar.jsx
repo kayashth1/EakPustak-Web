@@ -64,7 +64,7 @@ const Navbar = () => {
 
         {/* CTA */}
         <a
-          href="tel:+917978290345"
+          href="tel:+917815040068"
           className="hidden md:block px-7 py-2 rounded-full font-semibold text-sm
             bg-[linear-gradient(135deg,_#312e81_0%,_#4338ca_50%,_#312e81_100%)]
             hover:bg-[linear-gradient(135deg,_#4338ca_0%,_#6366f1_50%,_#4338ca_100%)]
@@ -135,7 +135,7 @@ const Navbar = () => {
         {/* Call Now */}
         <div className="flex justify-center mt-10">
           <a
-            href="tel:+917978290345"
+            href="tel:+917815040068"
             className="px-10 py-3 rounded-full font-semibold text-white
               bg-[linear-gradient(135deg,_#312e81_0%,_#4338ca_50%,_#312e81_100%)]
               hover:bg-[linear-gradient(135deg,_#4338ca_0%,_#6366f1_50%,_#4338ca_100%)]

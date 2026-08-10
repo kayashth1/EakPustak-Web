@@ -26,7 +26,7 @@ const Footer = () => {
           <h3 className='text-white text-lg font-bold mb-4'>Contact Us</h3>
           <ul className='flex flex-col gap-3 text-gray-400 text-sm'>
             <li>🌐 <a href="https://www.eakpustak.com" className='hover:text-white ml-1'>www.eakpustak.com</a></li>
-            <li>📞 <a href="tel:+917978290345" className='hover:text-white ml-1'>+91 79782 90345</a></li>
+            <li>📞 <a href="tel:+917815040068" className='hover:text-white ml-1'>+91 78150 40068</a></li>
             <li>✉️ <a href="mailto:contact@eakpustak.com" className='hover:text-white ml-1'>contact@eakpustak.com</a></li>
           </ul>
         </div>
